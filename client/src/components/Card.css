@@ -1,0 +1,40 @@
+.playing-card {
+  box-sizing: border-box;
+  width: 80px;
+  height: 120px;
+  padding: 6px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+}
+
+.playing-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.playing-card:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.playing-card:focus-visible {
+  outline: 3px solid #176b5b;
+  outline-offset: 2px;
+}
+
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+@media (max-width: 600px) {
+  .playing-card {
+    width: 64px;
+    height: 96px;
+  }
+}

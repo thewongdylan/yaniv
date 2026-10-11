@@ -1,0 +1,7 @@
+.ps_venv/
+.venv/
+node_modules/
+__pycache__/
+.vite/
+.env
+.DS_Store
